@@ -1,0 +1,12 @@
+resources:
+  jobs:
+    Job_DAB:
+      name: Job_DAB
+      tasks:
+        - task_key: data_injestion
+          notebook_task:
+            notebook_path: ../../src/notebook/data_injestion
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED

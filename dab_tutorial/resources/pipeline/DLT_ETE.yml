@@ -1,0 +1,14 @@
+id: 7b172f17-12ec-4a79-a68f-c1645ebfb997
+pipeline_type: WORKSPACE
+name: DLT_ETE
+libraries:
+  - glob:
+      include: ../../src/DLT_ETE/transformations/**
+schema: bronze
+continuous: false
+development: false
+photon: true
+channel: CURRENT
+catalog: databricksudha
+serverless: true
+root_path: ../../src/DLT_ETE
